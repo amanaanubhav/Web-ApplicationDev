@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Demonstration - I love KIIT</title>
+</head>
+<body>
+    <h1>Audio Element Demonstration</h1>
+    
+    <section>
+        <h2>Audio Recording: "I love KIIT"</h2>
+        <p>Listen to my audio recording below:</p>
+        
+        <!-- Audio element with controls and optional attributes -->
+        <audio controls autoplay loop muted>
+            <source src="i_love_kiit.mp3" type="audio/mpeg">
+            <source src="i_love_kiit.ogg" type="audio/ogg">
+            <source src="i_love_kiit.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <p><strong>Note:</strong> Replace the audio file source with your actual recorded file. Supported formats: MP3, OGG, WAV</p>
+    </section>
+    
+    <section>
+        <h2>Audio Attributes Used</h2>
+        <ul>
+            <li><strong>controls</strong>: Displays play, pause, and volume controls</li>
+            <li><strong>autoplay</strong>: Audio starts playing automatically when page loads</li>
+            <li><strong>loop</strong>: Audio will loop/repeat continuously</li>
+            <li><strong>muted</strong>: Audio starts muted (user can unmute using controls)</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Alternative Audio Element (without autoplay, loop, muted)</h2>
+        <p>Here's another audio player with just controls:</p>
+        <audio controls>
+            <source src="i_love_kiit.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+</body>
+</html>

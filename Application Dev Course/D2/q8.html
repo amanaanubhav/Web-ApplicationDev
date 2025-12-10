@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out all the required information to complete your registration.</p>
+    
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <!-- Text Inputs -->
+            <div>
+                <label for="firstName">First Name:</label><br>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <br>
+            
+            <div>
+                <label for="lastName">Last Name:</label><br>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <br>
+            
+            <div>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            
+            <!-- Password Input -->
+            <div>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <br>
+            
+            <div>
+                <label for="confirmPassword">Confirm Password:</label><br>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <br>
+            
+            <!-- Date Input -->
+            <div>
+                <label for="birthDate">Date of Birth:</label><br>
+                <input type="date" id="birthDate" name="birthDate" required>
+            </div>
+            <br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Additional Information</legend>
+            
+            <!-- Number Input -->
+            <div>
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" min="18" max="120" required>
+            </div>
+            <br>
+            
+            <!-- Radio Buttons -->
+            <div>
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+            <br>
+            
+            <!-- Dropdown List -->
+            <div>
+                <label for="country">Country:</label><br>
+                <select id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="usa">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+                    <option value="india">India</option>
+                    <option value="germany">Germany</option>
+                    <option value="france">France</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+            
+            <!-- Checkboxes -->
+            <div>
+                <label>Interests (Select all that apply):</label><br>
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label><br>
+                
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label><br>
+                
+                <input type="checkbox" id="reading" name="interests" value="reading">
+                <label for="reading">Reading</label><br>
+                
+                <input type="checkbox" id="travel" name="interests" value="travel">
+                <label for="travel">Travel</label><br>
+                
+                <input type="checkbox" id="technology" name="interests" value="technology">
+                <label for="technology">Technology</label>
+            </div>
+            <br>
+            
+            <!-- Textarea -->
+            <div>
+                <label for="bio">Biography/About Yourself:</label><br>
+                <textarea id="bio" name="bio" rows="5" cols="50" placeholder="Tell us about yourself..."></textarea>
+            </div>
+            <br>
+            
+            <!-- File Upload -->
+            <div>
+                <label for="profilePicture">Upload Profile Picture:</label><br>
+                <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+            </div>
+            <br>
+            
+            <!-- Range Input -->
+            <div>
+                <label for="satisfaction">Satisfaction Level (How satisfied are you with our service?):</label><br>
+                <input type="range" id="satisfaction" name="satisfaction" min="0" max="10" value="5">
+                <span id="rangeValue">5</span>
+            </div>
+            <br>
+            
+            <!-- Color Picker -->
+            <div>
+                <label for="favoriteColor">Favorite Color:</label><br>
+                <input type="color" id="favoriteColor" name="favoriteColor" value="#000000">
+            </div>
+            <br>
+        </fieldset>
+        
+        <!-- Submit and Reset Buttons -->
+        <div>
+            <input type="submit" value="Submit Registration" style="background-color: #28a745; color: white; padding: 10px 30px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
+            
+            <input type="reset" value="Reset Form" style="background-color: #dc3545; color: white; padding: 10px 30px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px; margin-left: 10px;">
+        </div>
+    </form>
+    
+    <script>
+        // Display range value in real-time
+        document.getElementById('satisfaction').addEventListener('input', function() {
+            document.getElementById('rangeValue').textContent = this.value;
+        });
+    </script>
+</body>
+</html>

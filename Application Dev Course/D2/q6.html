@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Demonstration - Selfie Video</title>
+</head>
+<body>
+    <h1>Video Element Demonstration</h1>
+    
+    <section>
+        <h2>Selfie Video</h2>
+        <p>Watch my self-recorded selfie video below:</p>
+        
+        <!-- Responsive video element with controls and optional attributes -->
+        <video controls autoplay loop muted width="100%">
+            <source src="selfie_video.mp4" type="video/mp4">
+            <source src="selfie_video.webm" type="video/webm">
+            <source src="selfie_video.ogg" type="video/ogg">
+            Your browser does not support the video element.
+        </video>
+        
+        <p><strong>Note:</strong> Replace the video file source with your actual self-recorded video file. Supported formats: MP4, WebM, OGG</p>
+    </section>
+    
+    <section>
+        <h2>Video Attributes Used</h2>
+        <ul>
+            <li><strong>controls</strong>: Displays play, pause, volume, and fullscreen controls</li>
+            <li><strong>autoplay</strong>: Video starts playing automatically when page loads</li>
+            <li><strong>loop</strong>: Video will loop/repeat continuously</li>
+            <li><strong>muted</strong>: Video starts muted (user can unmute using controls)</li>
+            <li><strong>width="100%"</strong>: Makes the video responsive, taking full width of its container</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Alternative Video Element (without autoplay, loop, muted)</h2>
+        <p>Here's another video player with just controls and responsive width:</p>
+        <video controls width="100%">
+            <source src="selfie_video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+</body>
+</html>
